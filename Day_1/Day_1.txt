@@ -1,0 +1,11 @@
+Common Git Commands:
+ - git status
+ - git add .
+ - git commit -m "message here"
+ - git push origin branch-name
+
+ - git pull origin branch-name
+
+ - git checkout -b branch-name 
+ 
+ - git merge branch-name
