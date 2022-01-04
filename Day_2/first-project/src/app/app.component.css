@@ -17,3 +17,11 @@
 .purple {
   background-color: purple;
 }
+
+.white {
+  color: white;
+}
+
+.dark-background {
+  background-color: rgba(0,0,0,0.7);
+}
