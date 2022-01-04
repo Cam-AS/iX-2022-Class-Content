@@ -10,6 +10,14 @@
 .white {
   color: white;
 }
+.p {
+  position: absolute;
+  justify-content: center;
+}
+
+.black {
+  color:rgba(0, 0, 0, 0.7)
+}
 
 .box {
   display: flex;
@@ -22,10 +30,17 @@
 .box-33 {
   width: 33.33%;
 }
-
-.box-66 {
-  width: 66.666%;
+.img {
+  width: 30%;
+  display: flex;
+  align-items: fit;
+  padding: 50px 0px;
+  margin: 4px;
 }
+
+/* .box-66 {
+  width: 66.666%;
+} */
 
 .blue {
   background-color: blue;
@@ -45,4 +60,7 @@
 
 .pink {
   background-color: pink;
+}
+.grey {
+  background-color: grey;
 }

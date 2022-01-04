@@ -11,6 +11,22 @@ Day 1:
  - CSS
  - JavaScript
 
+       <!--  (Day 1 Homework:
+       - Create 2 GITHUB repositories, 1:Class Work 
+                                     2:Home Work
+       - Clone both repositories to your computer
+       - Create a day 1 folder for your homework
+       - Create a .txt file and write some personal goals you wish to accomplish during this course
+       - Create 3 files, 1: index.html
+                         2: style.css
+                         3: app.js
+       - Connect all 3 files so that they can talk to each other 
+       - Create an HTML Element, style it using CSS & write a function using JS that is triggered on a button click
+       - PUSH your changes to GITHUB
+       - Submit a link to your GITHUB repo on CANVAS 
+       - Recap Day 1 slides & Read Day 2 slides
+        ) -->
+
 Day 2: 
  - Creating a new Angular project 
  - Navigating the files & folders 
