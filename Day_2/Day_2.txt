@@ -1,0 +1,39 @@
+Day 2: 
+ - Creating a new Angular project 
+ - Navigating the files & folders 
+ - TypeScript Introduction 
+ - Connecting and using Bootstrap 
+
+Create a new project:
+ - ng new <project-name>
+
+Navigating Files & Folders;
+ - package.json: contains all your package dependencies 
+ - gitignore: contains a list of things you don't want added to GitHub
+ - src: main project folder
+ - app: your project, modules, coponents, services, models
+ - assets: a place for your project assets (images)
+ - environments: configure your local or production environment specs
+
+Run Project: 
+ - ng serve
+ - then open chrome to localhost:4200, you will see the Angular landing page
+
+Adding Bootstrap:
+ - npm install --save bootstrap (Check Node Modules)
+ - Make Angular Aware of Bootstrap in Angular.json
+ - styles []
+ - Add "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+
+App Module:
+
+NgModules configure the injector and the compiler and help organize related things together.
+
+Module in Angular refers to a place where you can group the components, directives, pipes, and services, which are related to the application.
+
+Modules provide a container for your app's source code, resource files, and app level settings, such as the module-level build file and Android manifest file. Each module can be independently built, tested, and debugged. Android Studio uses modules to make it easy to add new devices to your project
+
+Angular libraries are NgModules, such as FormsModule, HttpClientModule, and RouterModule.
+
+NgModules consolidate components, directives, and pipes into cohesive blocks of functionality, each focused on a feature area, application business domain, workflow, or common collection of utilities.

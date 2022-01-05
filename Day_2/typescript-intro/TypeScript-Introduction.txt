@@ -1,0 +1,24 @@
+TypeScript - Extending JavaScript
+
+What it is & why would we use it?
+
+ - Is is a so called superset to JavaScript, it extends JavaScript. 
+ - TypeScript adds more features to the JS syntax
+ - Most importantly it adds static Typing (JS is dynamically Typed)
+ - With Typescript functions now know what Type to expect 
+ - Static typing prevents ununecessary errors (sending in strings instead of numbers)
+ - JS: function add(a, b) {} (dynamic type accepted)
+ - TS: function add(a: number, b: number) {} (Now we expect a number)
+
+npm init -y (Create package.json in project)
+npm install typescript
+We have to compile the TS into JS to see it in the browser
+npx tsc intro.ts
+
+Core Concepts & types
+
+Primitives: numbers, strings, boolean are core types (null & undefined are used but differently)
+More complex: arrays, objects
+
+Type Inference
+Function types, parameters, Classes & Interfaces
