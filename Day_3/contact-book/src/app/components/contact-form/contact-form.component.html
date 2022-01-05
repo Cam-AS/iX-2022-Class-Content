@@ -1,0 +1,48 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title text-center">Enter Contact Details</h5>
+
+      <hr />
+
+      <label for="name" class="form-label">Name & Surname</label>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          [(ngModel)]="contactForm.name"
+        />
+      </div>
+      
+      <label for="number" class="form-label">Phone Number</label>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="number"
+          [(ngModel)]="contactForm.number"
+        />
+      </div>
+      
+      <label for="email" class="form-label">Email</label>
+      <div class="input-group mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          [(ngModel)]="contactForm.email"
+        />
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <button type="button" (click)="addContact()" class="btn btn-primary">Add Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <app-contact-list [contacts]="contacts"></app-contact-list>
+</div>
+
