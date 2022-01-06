@@ -1,0 +1,5 @@
+Day 3: 
+ - Bootstrap Grid & layouts 
+ - Angular Components 
+ - Angular Data Models 
+ - Angular Data Binding 

@@ -1,0 +1,18 @@
+<table class="table mt-3">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Email Adress</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of contacts; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.number }}</td>
+      <td>{{ contact.email }}</td>
+    </tr>
+  </tbody>
+</table>
