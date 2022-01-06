@@ -1,0 +1,58 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-title text-center mt-3">Task List</div>
+    <div class="card-body">
+      <hr>
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Task Details"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+          [(ngModel)]="task.task"
+
+        />
+        <button 
+          *ngIf="this.edit == false"
+          class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+          (click)="addTask()"
+        >
+          Add Task
+        </button>
+        <button 
+          *ngIf="this.edit == true"
+          class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+          (click)="updateTask()"
+        >
+          Update Task
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <table class="table mt-5" *ngIf="this.edit == false"> -->
+  <table class="table mt-5">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Tasks</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks; let i = index">
+        <th scope="row">{{ i }}</th>
+        <td>{{ task.task }}</td>
+        <td>
+          <button class="btn btn-primary me-3" (click)="editTask(tasks[i])">Edit</button>
+          <button class="btn btn-danger" (click)="deleteTask(tasks[i])">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
