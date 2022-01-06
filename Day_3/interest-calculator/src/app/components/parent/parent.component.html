@@ -1,0 +1,10 @@
+<div class="input-group mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Data from parent"
+    [(ngModel)]="textEntered"
+  />
+</div>
+
+<app-child [data]="textEntered"></app-child>
