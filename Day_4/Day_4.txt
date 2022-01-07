@@ -1,0 +1,4 @@
+Day 4:
+ - Angular Common Directives
+ - Angular Routing
+ - Angular Services
