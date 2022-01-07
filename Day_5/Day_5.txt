@@ -1,0 +1,6 @@
+Day 5:
+ - Introduction to the backend
+ - REST API's Explained
+ - Servers Explained
+ - Creating an Express Server
+ - Sending an Http request from Angular

@@ -4,7 +4,7 @@ import { movieList, Movie } from 'src/app/models/movies';
 @Component({
   selector: 'app-movie-form',
   templateUrl: './movie-form.component.html',
-  styleUrls: ['./movie-form.component.css']
+  styleUrls: ['./movie-form.component.css'],
 })
 export class MovieFormComponent implements OnInit {
   movieForm: Movie = new Movie();
@@ -15,7 +15,7 @@ export class MovieFormComponent implements OnInit {
 
   movies = movieList;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.randomMovie = this.getRandomMovie();
@@ -29,6 +29,7 @@ export class MovieFormComponent implements OnInit {
     this.show = false;
     this.answer = '';
     this.randomMovie = this.getRandomMovie();
+    this.userGuess = new Movie();
   }
 
   hint() {
@@ -36,13 +37,14 @@ export class MovieFormComponent implements OnInit {
   }
 
   checkGuess() {
-    if (this.userGuess.title === this.randomMovie.title) {
-      this.answer = ("Noice");
+    if (
+      this.userGuess.title?.toLowerCase() ===
+      this.randomMovie.title?.toLowerCase()
+    ) {
+      this.answer = 'Noice';
+    } else {
+      this.answer = 'Sorry Mate, try again';
+      this.userGuess = new Movie();
     }
-    else {
-      this.answer = ("Sorry Mate, try again");
-    }
-
-    this.userGuess = new Movie();
   }
 }
