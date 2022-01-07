@@ -1,0 +1,35 @@
+Day 6:
+ - REST API
+ - API Endpoints, Creating Routes in Express
+ - API Data Models, Creating Backend Models
+ - API Data Manipulation, Creating Backend Controllers
+ - API Testing, Endpoint tests using Postman
+
+Steps to build first-REST-api:
+
+- npm init (accept all default settings)
+- npm install express
+- npm install nodemon
+- add a start script to the package.json to execute 'nodemon app.js'
+- add your app.js
+- import express
+- create express app
+- listen on a port
+
+At this point we have our most basic server
+
+- npm install body-parser (parse incoming request bodies)
+- create routes folder (we want to separate all the logic)
+- image a blog like app where we just want messages 
+- create a feed.js file
+- import express
+- create router with express router
+- export the router from the file
+- create our first route /posts with the router, make it a get method
+- next we need to add the logic for wat happens when this route is hit
+- therefore create your controllers folder and add a feed.js file
+- export a new function getPosts from the file
+- import the controller into the routes file
+- assign the getPosts function to the route
+- to hit the route we need to register the route in app.js
+- update the getPosts function to return some dummy data and a status messages
