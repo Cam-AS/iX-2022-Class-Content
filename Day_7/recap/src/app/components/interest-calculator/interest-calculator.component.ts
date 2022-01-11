@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculatorService } from 'src/app/services/calculator.service';
 
 @Component({
   selector: 'app-interest-calculator',
@@ -13,9 +14,15 @@ export class InterestCalculatorComponent implements OnInit {
   totalReturn?: any;
   totalInterest?: any;
 
-  constructor() {}
+  constructor(
+    private calculatorService: CalculatorService
+  ) {}
 
   ngOnInit(): void {}
+
+  uploadPost() {
+    this.calculatorService.addPost();
+  }
 
   calculateInterest() {
     // if(!this.isValid()) {

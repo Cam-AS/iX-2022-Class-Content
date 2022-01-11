@@ -4,6 +4,7 @@ Day 6:
  - API Data Models, Creating Backend Models
  - API Data Manipulation, Creating Backend Controllers
  - API Testing, Endpoint tests using Postman
+ - connecting MongoDB
 
 Steps to build first-REST-api:
 

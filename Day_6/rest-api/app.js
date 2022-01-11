@@ -19,7 +19,7 @@ app.use('/feed', feedRoutes);
 
 mongoose
   .connect(
-    'mongodb+srv://cameron:uQViFz9xAE02qAO3@cluster0.yg2fe.mongodb.net/Cluster0?retryWrites=true&w=majority'
+    'mongodb+srv://cameron:AIAyZ0JlFbGgR8hC@cluster0.voha2.mongodb.net/Cluster0?retryWrites=true&w=majority'
   )
   .then(() => {
     console.log('Connected to MongoDB');
