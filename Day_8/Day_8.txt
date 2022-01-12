@@ -1,0 +1,4 @@
+Day 8:
+ - CRUD App
+ - CREATE (Front to Back)
+ - READ (Front to Back)
