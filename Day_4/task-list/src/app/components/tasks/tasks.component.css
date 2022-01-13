@@ -1,0 +1,4 @@
+.card-border {
+  border: 5px dashed black;
+  border-radius: 25px;
+}

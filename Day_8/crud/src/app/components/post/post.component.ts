@@ -10,6 +10,7 @@ import Post from 'src/app/models/post';
 export class PostComponent implements OnInit {
   post: Post = new Post();
   posts: Post[] = [];
+  editing: boolean = false;
 
   constructor(private postService: PostService) {}
 
@@ -37,5 +38,20 @@ export class PostComponent implements OnInit {
 
       this.posts.push(post);
     }
+  }
+
+  editPost(post: Post) {
+    this.editing = true;
+    this.post = post;
+  }
+
+  async updatePost() {
+    await this.postService.updatePostOnDb(this.post);
+    this.post = new Post();
+  }
+
+  async deletePost(post: Post) {
+    await this.postService.deletePostOnDb(post);
+    this.posts = this.posts.filter((x) => x.id != post.id);
   }
 }

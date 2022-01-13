@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const feedRoutes = require('./routes/feed');
+const tasksRoutes = require('./routes/tasks');
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/feed', feedRoutes);
+app.use('/tasks',  tasksRoutes);
 
 mongoose
   .connect(

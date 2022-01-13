@@ -25,11 +25,20 @@
     </div>
 
     <button
+      *ngIf="!this.editing"
       class="btn btn-primary"
       (click)="addPost()"
       [disabled]="this.post.title == null || this.post.content == null"
     >
       Add Post
+    </button>
+    <button
+      *ngIf="this.editing"
+      class="btn btn-primary"
+      (click)="updatePost()"
+      [disabled]="this.post.title == null || this.post.content == null"
+    >
+      Update Post
     </button>
   </div>
 </div>
@@ -76,6 +85,17 @@
         >
           <div class="accordion-body">
             <strong> {{ post.content }} </strong>
+
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <button class="btn btn-primary me-1" (click)="editPost(post)">
+                  EDIT
+                </button>
+                <button class="btn btn-danger ms-1" (click)="deletePost(post)">
+                  DELETE
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
